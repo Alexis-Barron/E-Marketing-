@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        /* Añadir animación suave para el desplazamiento */
+        html {
+            scroll-behavior: smooth;
+          
+        
+        }
+        /* Estilo para hacer el cubo más pequeño */
+        .swiper {
+            width: 400px; /* Ajusta el ancho según lo necesites */
+            height: 400px; /* Ajusta la altura según lo necesites */
+        }
+        .swiper-slide img {
+            height: 100%; /* Asegura que la imagen llene el contenedor */
+            object-fit: cover; /* Mantiene la relación de aspecto */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-5">
+            <div class="text-2xl font-bold">
+                <img src="img/logo.png" alt="Rhynos XXL Gaming" class="h-16 transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg"> 
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-500">Inicio</a>
+                <a href="#sobre-nosotros" class="text-gray-700 hover:text-blue-500">Sobre Nosotros</a>
+                <a href="#nuestros-servicios" class="text-gray-700 hover:text-blue-500">Nuestros Servicios</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="focus:outline-none transform transition-transform duration-300 ease-in-out hover:scale-105">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden transition-all duration-500 ease-in-out transform scale-y-0 origin-bottom">
+            <div class="flex flex-col bg-white shadow-lg p-4">
+                <a href="index.html" class="py-2 text-gray-700 hover:text-blue-500">Inicio</a>
+                <a href="#sobre-nosotros" class="py-2 text-gray-700 hover:text-blue-500">Sobre Nosotros</a>
+                <a href="#nuestros-servicios" class="py-2 text-gray-700 hover:text-blue-500">Nuestros Servicios</a>
+                <a href="#" class="py-2 text-gray-700 hover:text-blue-500">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto flex flex-col p-5">
+        
+        <!-- Sección Sobre Nosotros -->
+        <section id="sobre-nosotros" class="bg-gray-100 rounded-lg shadow p-6 mb-8 flex flex-col md:flex-row items-center">
+            <img src="img/logo.png" alt="Descripción de la imagen" class="w-full md:w-1/2 h-auto rounded-lg mb-4 md:mb-0 md:mr-4 md:order-1">
+            <div class="w-full md:w-1/2 md:order-2">
+                <h2 class="text-2xl font-bold mb-4">Sobre Nosotros</h2>
+                <p class="text-gray-700 mb-4">
+                    En <strong>Rhynos XXL</strong>, somos una agencia de marketing digital dedicada a ayudar a empresas a crecer y destacar en el mundo en línea. Nuestro equipo de expertos combina creatividad y estrategia para ofrecer soluciones efectivas que se adaptan a tus necesidades.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Nos especializamos en el diseño de páginas web, SEO, gestión de redes sociales y marketing de contenidos, trabajando de cerca con nuestros clientes para alcanzar sus objetivos.
+                </p>
+                <a href="https://wa.me/526951029477?text=Estoy%20interesado%20en%20el%20servicio." class="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">
+                    Contáctanos
+                </a>
+            </div>
+        </section>
+    
+       <!-- Sección Nuestros Servicios -->
+<section id="nuestros-servicios" class="bg-gray-100 rounded-lg shadow p-6 mb-8">
+    <h2 class="text-2xl font-bold mb-6 text-center">Nuestros Servicios</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+            <img src="https://via.placeholder.com/400x250" alt="Diseño Web" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Diseño Web</h3>
+                <p class="text-gray-700">Creamos sitios web modernos y funcionales que son visualmente atractivos y optimizados para la conversión.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+            <img src="https://via.placeholder.com/400x250" alt="SEO" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">SEO</h3>
+                <p class="text-gray-700">Mejoramos la visibilidad de tu sitio web en los motores de búsqueda para atraer tráfico orgánico.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+            <img src="https://via.placeholder.com/400x250" alt="Gestión de Redes Sociales" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Gestión de Redes Sociales</h3>
+                <p class="text-gray-700">Desarrollamos estrategias efectivas para conectar con tu audiencia y fomentar la lealtad a la marca.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+            <img src="https://via.placeholder.com/400x250" alt="Marketing de Contenidos" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Marketing de Contenidos</h3>
+                <p class="text-gray-700">Creamos contenido relevante y valioso que informa y engancha a tu público.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+            <img src="https://via.placeholder.com/400x250" alt="Consultoría" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Consultoría</h3>
+                <p class="text-gray-700">Ofrecemos asesoría especializada para ayudarte a alcanzar tus objetivos de negocio.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+            <img src="https://via.placeholder.com/400x250" alt="Publicidad Digital" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Publicidad Digital</h3>
+                <p class="text-gray-700">Creamos campañas publicitarias efectivas para maximizar tu retorno de inversión.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+        <!-- Carrusel -->
+        <section class="mb-8">
+            <center><h2 class="text-2xl font-bold mb-4">Nuestros Proyectos</h2></center>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Proyecto 1" class="w-full h-auto rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Proyecto 2" class="w-full h-auto rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Proyecto 3" class="w-full h-auto rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Proyecto 4" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, // Cambia de imagen cada 5 segundos
+                disableOnInteraction: false, // No desactiva el autoplay cuando el usuario interactúa
+            },
+        });
+    </script>
+
+
+<main class="container mx-auto flex flex-col p-5">
+    <!-- Sección Testimonios -->
+    <section id="testimonios" class="bg-gray-100 rounded-lg shadow p-6 mb-8">
+        <h2 class="text-2xl font-bold mb-6 text-center">Testimonios</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                <img src="https://via.placeholder.com/100" alt="Juan Pérez" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+                <p class="text-gray-700 italic">"Gracias a Rhynos XXL, nuestra presencia en línea ha mejorado significativamente. El equipo es increíble y muy profesional."</p>
+                <h4 class="font-bold mt-2">- Juan Pérez</h4>
+                <p class="text-gray-500">CEO de Empresa XYZ</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                <img src="https://via.placeholder.com/100" alt="Ana Gómez" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+                <p class="text-gray-700 italic">"El servicio de gestión de redes sociales ha aumentado nuestro engagement. ¡Recomendados al 100%!"</p>
+                <h4 class="font-bold mt-2">- Ana Gómez</h4>
+                <p class="text-gray-500">Fundadora de Negocio ABC</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                <img src="https://via.placeholder.com/100" alt="Luis Martínez" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+                <p class="text-gray-700 italic">"Excelente trabajo en el diseño de nuestra página web. Superó nuestras expectativas."</p>
+                <h4 class="font-bold mt-2">- Luis Martínez</h4>
+                <p class="text-gray-500">Director de Innovación en Empresa 123</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                <img src="https://via.placeholder.com/100" alt="Carla López" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+                <p class="text-gray-700 italic">"El equipo de Rhynos XXL nos ayudó a implementar una estrategia de SEO efectiva que triplicó nuestro tráfico."</p>
+                <h4 class="font-bold mt-2">- Carla López</h4>
+                <p class="text-gray-500">Gerente de Marketing en Compañía LMN</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                <img src="https://via.placeholder.com/100" alt="Javier Torres" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+                <p class="text-gray-700 italic">"La consultoría fue invaluable. Nos dieron las herramientas para crecer y mejorar nuestra estrategia."</p>
+                <h4 class="font-bold mt-2">- Javier Torres</h4>
+                <p class="text-gray-500">Co-fundador de Startup QRS</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                <img src="https://via.placeholder.com/100" alt="Sofia Ruiz" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+                <p class="text-gray-700 italic">"Fantástico servicio de publicidad digital. Hemos visto un gran retorno de inversión."</p>
+                <h4 class="font-bold mt-2">- Sofia Ruiz</h4>
+                <p class="text-gray-500">Directora Comercial en Empresa TUV</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Pie de Página -->
+<footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <div class="mb-4">
+            <img src="img/logo.png" alt="Logo Rhynos XXL" class="h-16 mx-auto mb-2">
+            <p class="text-lg font-bold">Rhynos XXL Gaming</p>
+        </div>
+        <p class="mb-4">Tu socio en marketing digital y crecimiento empresarial.</p>
+        <p class="text-sm">© 2024 Rhynos XXL. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.remove('scale-y-0'); // Abrir el menú
+                mobileMenu.classList.add('scale-y-100'); // Aumentar la escala al abrir
+                mobileMenu.classList.add('opacity-0'); // Inicialmente oculto
+                setTimeout(() => {
+                    mobileMenu.classList.remove('opacity-0'); // Hacerlo visible
+                }, 50); // Pequeño retraso para que la transición funcione
+            } else {
+                mobileMenu.classList.add('scale-y-0'); // Reducir la escala al cerrar
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden'); // Ocultar el menú después de la animación
+                }, 500); // Tiempo para que la animación se complete
+            }
+
+            menuButton.classList.toggle('scale-105'); // Añadir efecto de marea al botón
+            setTimeout(() => {
+                menuButton.classList.toggle('scale-100'); // Regresar a escala normal después de un tiempo
+            }, 300); // Tiempo para volver a la escala normal
+        });
+    </script>
+</body>
+</html>
